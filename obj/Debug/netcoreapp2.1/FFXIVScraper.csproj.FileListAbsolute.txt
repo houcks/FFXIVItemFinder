@@ -1,0 +1,11 @@
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\bin\Debug\netcoreapp2.1\FFXIVScraper.deps.json
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\bin\Debug\netcoreapp2.1\FFXIVScraper.runtimeconfig.json
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\bin\Debug\netcoreapp2.1\FFXIVScraper.runtimeconfig.dev.json
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\bin\Debug\netcoreapp2.1\FFXIVScraper.dll
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\obj\Debug\netcoreapp2.1\FFXIVScraper.csproj.CoreCompileInputs.cache
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\obj\Debug\netcoreapp2.1\FFXIVScraper.AssemblyInfoInputs.cache
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\obj\Debug\netcoreapp2.1\FFXIVScraper.AssemblyInfo.cs
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\obj\Debug\netcoreapp2.1\FFXIVScraper.csprojAssemblyReference.cache
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\bin\Debug\netcoreapp2.1\FFXIVScraper.pdb
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\obj\Debug\netcoreapp2.1\FFXIVScraper.dll
+C:\Users\houck\source\repos\FFXIVScraper\FFXIVScraper\obj\Debug\netcoreapp2.1\FFXIVScraper.pdb
