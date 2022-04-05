@@ -1,40 +1,49 @@
 ﻿using System;
-using CsvHelper;
 using HtmlAgilityPack;
 using System.IO;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Web;
 
 namespace FFXIVScraper
 {
     class Scraper
     {
-        public void GetItem()
+        public string GetItem(string item)
         {
-
-            string itemName = GetName();
-            HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load($"https://ffxiv.consolegameswiki.com/wiki/{itemName}");
-            var HeaderNames = doc.DocumentNode.SelectNodes("//div[@class='mw-parser-output']/p");
-            foreach (var item in HeaderNames)
+            try
             {
-                if (item.InnerText != "\n")
+                string itemFormatted = FormatName(item);
+                HtmlWeb web = new HtmlWeb();
+                HtmlDocument doc = web.Load($"https://ffxiv.consolegameswiki.com/wiki/{itemFormatted}");
+                HtmlNodeCollection HeaderNames = doc.DocumentNode.SelectNodes("//div[@class='mw-parser-output']/p");
+                foreach (var node in HeaderNames)
                 {
-                    Console.WriteLine(item.InnerText);
+                    if (node.InnerText != "\n")
+                    {
+                        string decodedText = HttpUtility.HtmlDecode(node.InnerText);
+                        return decodedText;
+                    }
                 }
             }
-
-            Console.ReadLine();
+            catch (Exception error)
+            {
+                return "Not found";
+            }
+            return "Not Found";
         }
 
-        private string GetName()
+        private string FormatName(string item)
         {
-            Console.Write("Enter item name: ");
-            string itemName = Console.ReadLine();
-            itemName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(itemName);
-            itemName = itemName.Replace(" ", "_");
-            return itemName;
+
+            item = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(item);
+            item = item.Replace(" ", "_");
+            return item;
         }
 
     }
 }
+
+
+//!ffxivfinder item blades
+//Hey I found bla : 
